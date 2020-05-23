@@ -1,0 +1,97 @@
+.basket {
+	position: fixed;
+	height: 150px;
+	width: 185px;
+	right: 0;
+	z-index: 9;
+	top:10%;
+    background-image: url('../../assets/img/Basket/unnamed.png');
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: 87% 0%;
+
+	&_previewBtn {
+		position: absolute;
+		height: 75%;
+		width: 30px;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+50,752201+54,752201+54,bf6e4e+100 */
+		background: #f0b7a1; /* Old browsers */
+		background: -moz-linear-gradient(left,  #f0b7a1 0%, #8c3310 50%, #752201 54%, #752201 54%, #bf6e4e 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  #f0b7a1 0%,#8c3310 50%,#752201 54%,#752201 54%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  #f0b7a1 0%,#8c3310 50%,#752201 54%,#752201 54%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=1 ); /* IE6-9 */
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		box-shadow: 0px 0px 10px black;	
+		color: gold;
+		font-size: 1.2em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 0;
+		cursor: pointer;
+	}
+
+	&_orderBtn {
+		position: absolute;
+		outline: none;
+		border: none;
+		padding: 5px 25px;
+		border-radius: 5px;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+46,752201+56,752201+56,bf6e4e+100 */
+		background: #f0b7a1; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f0b7a1 0%, #8c3310 46%, #752201 56%, #752201 56%, #bf6e4e 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #f0b7a1 0%,#8c3310 46%,#752201 56%,#752201 56%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 46%,#752201 56%,#752201 56%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+		left: 40px;
+		bottom: 0;
+		color: gold;
+		cursor: pointer;
+		font-size: 1.2em;
+		box-shadow: 0px 0px 10px black;	
+	}
+
+	&_numberOfGoods {
+		position: absolute;
+		background: black;
+		top: 117px;
+		left: 1px;
+		padding: 8px 10px;
+		border-radius: 20px;
+		color: gold;
+	}
+}
+
+.preview {
+	animation-name: basketAnimation;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+@keyframes basketAnimation {
+	0% {
+		right:  -150px;
+	}
+	50% {
+		right: 0;
+	}
+	100% {
+		right: -150px;
+	}
+}
+
+.hid {
+	display: block;
+}
+
+.hidBasket {
+	right: -150px;
+	transition: all .5s;
+}
+
+.showBasket {
+	right: 0px;
+	transition: all .5s;
+}
+

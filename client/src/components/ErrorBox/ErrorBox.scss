@@ -1,0 +1,43 @@
+.errorBox {
+	position: fixed;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, 50%);
+	background: black;
+	padding: 20px 40px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	animation-name: errorAnimation;
+	animation-duration: 3s;
+	animation-direction: alternate;
+
+	& p {
+		width: 100%;
+	}
+}
+
+@keyframes errorAnimation {
+	0% {
+		top: 40%;
+		opacity: 0;
+	}
+	50% {
+		top:30%;
+		opacity: 1;
+	}
+	100% {
+		top:20%;
+		opacity: 0;
+	}
+}
+
+.hid {
+	display: none;
+}
+
+@media screen and (max-width: 740px) {
+	.errorBox {
+		width: 80%;
+	}
+}

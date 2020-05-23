@@ -1,0 +1,117 @@
+.header {
+	background-image: url('../../assets/img/Header/mediterranean.jpg');
+	background-color: #b2724d;
+	min-height: 25em;
+	background-size: 100%;
+	box-shadow: 0 58px 40px #b0694e;
+	position: relative;
+	padding-bottom: 5em;
+
+	&_wrapper {
+		position: relative;
+	}
+
+	&_logo {
+		position: absolute;
+		font-size: 2.5em;
+		top: 10%;
+		left: 4%;
+		background: rgba(255, 255, 255, 0.7);
+		border-radius: 5px;
+		padding: 10px;
+		& span:nth-child(1) {
+			color: red;
+		}
+		& span:nth-child(2) {
+			color: blue;
+		}
+		& span:nth-child(3) {
+			color: green;
+		}
+		& span:nth-child(4) {
+			color: yellow;
+			text-shadow: 0px 0px 10px black;
+		}
+		& span:nth-child(5) {
+			color: purple;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		width: 100%;
+		content: '';
+		height: 5px;
+		bottom: 0px;
+		box-shadow: 0 2px 8px #000000;
+		background: black;
+	}
+
+	&_title {
+		font-size: 11em;
+		text-align: center;
+		color: #fff;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		text-shadow: 0px 0px 10px black;
+	}
+
+	&_subtitle {
+		text-align: center;
+		font-size: 4em;
+		color: #fff;
+		text-shadow: 0px 0px 10px black;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.header {
+		font-size: 13.5px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.header {
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.header {
+		font-size: 10px;
+		background-repeat: no-repeat;
+		padding-bottom: 1em;
+		&_logo {
+			top: 4%;
+			left:2%;
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.header {
+		font-size: 8px;
+
+		&_title {
+			margin-bottom: 0px;
+		}
+
+		&_subtitle {
+			margin-top: 0px;
+		}
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.header {
+		font-size: 5.5px;
+
+		&_title {
+			margin-bottom: 0px;
+		}
+
+		&_subtitle {
+			margin-top: 0px;
+		}
+	}
+}

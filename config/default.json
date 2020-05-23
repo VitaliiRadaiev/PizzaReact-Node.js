@@ -1,0 +1,6 @@
+{
+	"port": 5000,
+	"jwtSecret": "vitalii is lifting a server",
+	"mongoUri": "mongodb+srv://vitalii:ubisoft3105tenk@cluster0-wvu4u.mongodb.net/app?retryWrites=true&w=majority",
+	"baseUrl": "http://localhost:5000"
+}

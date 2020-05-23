@@ -1,0 +1,65 @@
+.preview {
+	padding: 5% 2%;
+	text-align: center;
+	
+	&_title {
+		font-size: 4em;
+	}
+
+	&_text {
+		font-size: 1.5em;
+	}
+
+	&_arrow {
+		font-size: 3em;
+	}
+}
+
+.btn_ourContacts {
+	outline: none;
+	box-shadow: 0px 0px 10px 5px black;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 1.5em;
+	cursor: pointer;
+	border: none;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+46,752201+56,752201+56,bf6e4e+100 */
+	background: #f0b7a1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f0b7a1 0%, #8c3310 46%, #752201 56%, #752201 56%, #bf6e4e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f0b7a1 0%,#8c3310 46%,#752201 56%,#752201 56%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 46%,#752201 56%,#752201 56%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+	text-shadow: 0 0 5px white;
+
+	&:active {
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bf6e4e+0,8c3310+40,8c3310+40,752201+49,f0b7a1+100 */
+		background: #bf6e4e; /* Old browsers */
+		background: -moz-linear-gradient(top,  #bf6e4e 0%, #8c3310 40%, #8c3310 40%, #752201 49%, #f0b7a1 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #bf6e4e 0%,#8c3310 40%,#8c3310 40%,#752201 49%,#f0b7a1 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #bf6e4e 0%,#8c3310 40%,#8c3310 40%,#752201 49%,#f0b7a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf6e4e', endColorstr='#f0b7a1',GradientType=0 ); /* IE6-9 */
+
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.preview {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.preview {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.preview {
+		padding: 10% 0 0;
+
+		&_title {
+			font-size: 3em;
+		}
+	}
+}

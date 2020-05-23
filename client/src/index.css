@@ -1,0 +1,55 @@
+@import url('~normalize.css');
+@import url('./assets/icomoon/icomoon.css');
+
+@font-face {  /*подключение шрифта*/
+	font-family: 'Roboto';
+	src: url("./assets/fonts/Roboto-Bold.ttf") format('truetype');
+	src: url("./assets/fonts/Roboto-Medium.ttf") format('truetype');
+	src: url("./assets/fonts/Roboto-Regular.ttf") format('truetype');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #be6e2a;
+	background-image: url('./assets/img/mainPage/vintage.jpg');
+	background-size: 100%;
+	font-size: 16px;
+}
+
+.container {
+	max-width: 1230px;
+	min-width: 320px;
+	padding: 1px 15px;
+	margin: 0 auto;
+}
+
+
+
+/*@media screen and (max-width: 1140px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	body {
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	body {
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	body {
+		font-size: 6px;
+	}
+}*/

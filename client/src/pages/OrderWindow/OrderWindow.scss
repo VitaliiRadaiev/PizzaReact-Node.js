@@ -1,0 +1,415 @@
+.orderWindow {
+	background-color: rgba(0,0,0,0.8);
+	background-size: 100% 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	&_title {
+		font-size: 1.6em;
+	}
+
+	&_content {
+		position: relative;
+		background: #fff;
+		border-radius: 10px;
+		width: 70%;
+		min-width: 320px;
+		padding: 10px 15px;
+		margin: 0 auto;
+		
+	}
+
+	&_userOrders {
+		max-height: 300px;
+		overflow: auto;
+		&_item {
+			display: flex;
+			 justify-content: flex-end;
+			 align-items: center;
+			 background: rgba(0,0,0,0.2);
+			 margin-bottom: 15px;
+			 padding: 0 5px;
+			 border-radius: 5px;
+
+			 &_title {
+			 	margin-right: auto;
+			 	font-size: 1.2em;
+			 	width: 40%;
+			 }
+
+			 &_minus {
+			 	background: #835151;
+			 	padding: 5px 10px;
+			 	color: #fff;
+			 	margin: 0 15px;
+			 	font-size: 1.4em;
+			 	cursor: pointer;
+			 	border-radius: 5px;
+			 	transition: all .2s;
+			 	width: 8.5%;
+			 	display: flex;
+			 	justify-content: center;
+			 	align-items: center;
+			 	max-width: 60px;
+			 	min-width: 35px;
+
+			 	&:active {
+			 		box-shadow: 0 0 5px 3px #fff;
+			 		transition: none;
+			 	}
+			 }
+
+			 &_plus {
+		 	 	background: #835151;
+		 	 	padding: 5px 10px;
+		 	 	color: #fff;
+		 	 	margin: 0 15px;
+		 	 	font-size: 1.4em;
+		 	 	cursor: pointer;
+		 	 	border-radius: 5px;
+		 	 	transition: all .2s;
+		 	 	width: 8.5%;
+		 	 	display: flex;
+		 	 	justify-content: center;
+		 	 	align-items: center;
+		 	 	max-width: 60px;
+		 	 	min-width: 35px;
+	
+		 	 	&:active {
+		 	 		box-shadow: 0 0 5px 3px #fff;
+		 	 		transition: none;
+		 	 	}
+			 }
+
+			 &_sum {
+			 	padding: 5px;
+			 	margin: 0 10px;
+			 	font-size: 1.3em;
+			 	background: #fff;
+			 	border-radius: 20px;
+			 	width: 5%;
+			 	text-align: center;
+			 	min-width: 25px;
+			 }
+
+			 &_allAmount {
+			 	padding: 5px 10px;
+			 	font-size: 1.3em;
+			 	width: 20%;
+			 	text-align: center;
+			 }
+
+			 &_removeBtn {
+			 	font-size: 1.2em;
+			 	padding: 5px 10px;
+			 	outline: none;
+			 	border: none;
+			 	background: #c80505;
+			 	border-radius: 5px;
+			 	cursor: pointer;
+			 	transition: all .2s;
+				width: 20%;
+			 	 	&:hover {
+			 			background: #fb4747;
+			 			box-shadow: 0 0 5px 3px black;
+			 	 	}
+			 	 	&:active {
+			 	 		box-shadow: 0 0 5px 3px #fff;
+			 	 		transition: none;
+			 	 	}
+			 }
+		}
+	}
+
+	& .closeBtn {
+		padding:3px;
+		position: absolute;
+		right: 10px;
+		top:10px;
+		font-size: 1.4em;
+		cursor: pointer;
+		border-radius: 3px;
+		&:hover {
+			background: rgba(0,0,0, 0.3);
+		}
+	}
+
+	&_allSumMoney {
+		text-decoration: underline;
+		font-size: 1.3em;
+	}
+
+	&_form {
+		padding: 30px 0;
+
+		&  p {
+			margin: 0;
+			padding-left: 5px;
+			font-size: 1.2em;
+			padding-bottom: 4px;
+		}
+
+		&_name {
+			margin-bottom: 20px;
+
+			& input[name="name"] {
+				padding: 10px;
+				outline: none;
+				border-radius: 5px;
+				border: 1px solid black;
+				font-size: 1.3em;
+				background: rgba(0,0,0,0.2);
+				color: #835151;
+				width: 60%;		
+
+				&:focus {
+					background: rgba(0,0,0,0.08);
+					box-shadow: 0 0 10px black;
+				}
+
+				&::-webkit-input-placeholder {
+					color: #835151;
+				}
+
+				&::-moz-placeholder {
+					color: #835151;
+				}
+
+				&::-ms-input-placeholder{
+					color: #835151;
+				}
+			}
+		}
+
+		&_phone {
+			margin-bottom: 20px;
+
+			& input[name="phone"] {
+				padding: 10px;
+				outline: none;
+				border-radius: 5px;
+				border: 1px solid black;
+				font-size: 1.3em;
+				background: rgba(0,0,0,0.2);
+				color: #835151;
+				width: 60%;	
+
+				&:focus {
+					background: rgba(0,0,0,0.08);
+					box-shadow: 0 0 10px black;
+				}
+
+				&::-webkit-input-placeholder {
+					color: #835151;
+				}
+
+				&::-moz-placeholder {
+					color: #835151;
+				}
+
+				&::-ms-input-placeholder{
+					color: #835151;
+				}
+			}
+		}
+
+		&_adress {
+			margin-bottom: 20px;
+
+			& input[name="adress"] {
+				padding: 10px;
+				outline: none;
+				border-radius: 5px;
+				border: 1px solid black;
+				font-size: 1.3em;
+				background: rgba(0,0,0,0.2);
+				color: #835151;
+				width: 60%;	
+
+				&:focus {
+					background: rgba(0,0,0,0.08);
+					box-shadow: 0 0 10px black;
+				}
+
+				&::-webkit-input-placeholder {
+					color: #835151;
+				}
+
+				&::-moz-placeholder {
+					color: #835151;
+				}
+
+				&::-ms-input-placeholder{
+					color: #835151;
+				}
+			}
+		}
+
+		&_sendOrderBtn {
+			padding: 10px 25px;
+			border-radius: 5px;
+			outline: none;
+			border: none;
+			font-size: 1.3em;
+			background: #835151;
+			cursor: pointer;
+			transition: all .2s;
+			&:hover {
+				color: gold;
+			}
+
+			&:active {
+				box-shadow: 0 0 10px 5px black;
+				transition: none;
+			}
+		}
+
+		&_comeBackBtn {
+			float: right;
+			padding: 10px 25px;
+			border-radius: 5px;
+			outline: none;
+			border: none;
+			font-size: 1.3em;
+			background: #c80505;
+			cursor: pointer;
+			transition: all .2s;
+			&:hover {
+				color: gold;
+			}
+
+			&:active {
+				box-shadow: 0 0 10px 5px black;
+				transition: none;
+			}
+		}
+
+	}
+}
+
+.errorBox {
+	position: fixed;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, 50%);
+	background: black;
+	padding: 20px 40px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 22px;
+	animation-name: errorAnimation;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+@keyframes errorAnimation {
+	0% {
+		top: 40%;
+		opacity: 0;
+	}
+	50% {
+		top:30%;
+		opacity: 1;
+	}
+	100% {
+		top:20%;
+		opacity: 0;
+	}
+}
+
+.hid {
+	display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+	.orderWindow {
+		&_content {
+			width: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.orderWindow {
+		height: 100%;
+		&_content {
+			width: 98%;
+
+		}
+
+		&_form {
+			&_name {
+				& input[name="name"] {
+					width: 100%;
+				}
+			}
+
+			&_phone {
+				& input[name="phone"] {
+					width: 100%;
+				}
+			}
+
+			&_adress {
+				& input[name="adress"] {
+					width: 100%;
+				}
+			}
+
+			&_comeBackBtn {
+				width: 100%;
+				margin-top: 20px;
+				float: none;
+			}
+
+			&_sendOrderBtn {
+				display: block;
+				margin: 0 auto;
+			}
+			
+		}
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.orderWindow {
+		&_userOrders {
+			&_item{
+				flex-wrap: wrap;
+
+				&_removeBtn {
+					width: 100%;
+					margin-bottom: 10px;
+				}				
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.orderWindow {
+		&_userOrders {
+			&_item{
+				flex-wrap: wrap;
+
+				&_allAmount {
+					width: 100%;
+					text-align: center;
+				}			
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.orderWindow {
+		font-size: 13.5px;
+		&_form {
+			&_comeBackBtn {
+				padding-left: 5px;
+				padding-right: 5px;
+
+			}
+		}
+	}
+}

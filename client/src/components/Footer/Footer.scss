@@ -1,0 +1,14 @@
+.footer {
+	background: rgba(0, 0, 0, 0.7803921568627451);
+	color: gray;
+	min-height: 200px;
+	margin-top: 20px;
+
+	&_wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 0 20px 20px;
+	}
+}
